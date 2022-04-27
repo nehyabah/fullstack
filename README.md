@@ -1,6 +1,25 @@
 <h1 align="center">Naemazon</h1>
 
-<p align="center">This is a fun full stack e-commerce application. It is still in the development process. It consistes of both the customer section and the admin section. The customer is able to buy products and make payments, made possible by the stripe implementation. At the admin section, the admin is able to add products, view recent transactions, compare revenue over thee last month and edit users. </p>
+N/B - APP IS STILL IN DEVELOPMENT
+
+This is a JavaScript  full-stack e-commerce application. 
+It is made of 3 parts, 
+* The E-commerce Web App, where users interacts with the store & make payments.
+* The Backend to handle all routings and controllers, orders and database.
+* The Admin panel which handles user data, product data, add/creates products, reads and write sales metric,  compare revenue over thee last month, review incoming orders. 
+
+The payment integration that will be used is stripe checkout.
+
+Below is a way to fire up the app on local machine.
+
+
+MONGO_URL = mongodb+srv://naeabah:Hsa17tyu@cluster0.4kugj.mongodb.net/shop?retryWrites=true&w=majority
+
+
+PASS_SEC = 1234
+
+
+JWT_SEC = 1234
 
 ## Links
 
@@ -20,8 +39,6 @@
 
 <img width="1440" alt="img2" src="https://user-images.githubusercontent.com/54932481/165635612-93b12c09-6cfd-476c-b4de-ec97e065e8af.png">
 
-
-![](/img4.png)
 
 ## Available Commands
 
