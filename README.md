@@ -28,8 +28,6 @@ JWT_SEC = 1234
 - [Live](<Homepage url> "Live View")
 
 
-- [API](<API Link> "API")
-
 ## Screenshots
 
 
