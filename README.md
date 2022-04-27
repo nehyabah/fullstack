@@ -15,9 +15,11 @@
 
 ![Home Page](/img1.png "Home Page")
 
-![](/img2.png)
 
-![](/img3.png)
+<img width="1440" alt="img1" src="https://user-images.githubusercontent.com/54932481/165635564-5d87ca36-d90f-4e85-9903-a94ce4f05f79.png">
+
+<img width="1440" alt="img2" src="https://user-images.githubusercontent.com/54932481/165635612-93b12c09-6cfd-476c-b4de-ec97e065e8af.png">
+
 
 ![](/img4.png)
 
