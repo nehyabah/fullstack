@@ -32,8 +32,6 @@ JWT_SEC = 1234
 
 ## Screenshots
 
-![Home Page](/img1.png "Home Page")
-
 
 <img width="1440" alt="img1" src="https://user-images.githubusercontent.com/54932481/165635564-5d87ca36-d90f-4e85-9903-a94ce4f05f79.png">
 
