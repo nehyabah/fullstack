@@ -24,8 +24,6 @@ JWT_SEC = 1234
 
 ## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "Naemazon Repo")
-
 - [Live](<Homepage url> "Live View")
 
 
