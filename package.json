@@ -11,13 +11,16 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.4",
+    "concurrently": "^7.1.0",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "firebase": "^9.1.0",
     "jsonwebtoken": "^8.5.1",
+    "lottie-web": "^5.9.3",
     "mongoose": "^6.0.5",
+    "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
@@ -31,7 +34,6 @@
     "timeago.js": "^4.0.2",
     "web-vitals": "^1.0.1"
   },
-
   "scripts": {
     "start": "node api start",
     "server": "nodemon api/index",
@@ -59,7 +61,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, 
+  },
   "devDepencies": {
     "nodemon": "^2.0.15",
     "concurrently": "^7.1.0"

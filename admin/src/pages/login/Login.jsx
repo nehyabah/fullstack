@@ -1,18 +1,34 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../../redux/apiCalls";
+// import { login } from "../../redux/context/userContext";
 import styled from "styled-components";
 import image from './random/imag2.jpg'
+import { Link, BrowserRouter,
+  Router,
+  Route,
+  useRouteMatch,
+  useNavigate,
+  Navigate
+ } from "react-router-dom";
+import axios from "axios";
+// import { Router } from "express";
+
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
   const dispatch = useDispatch();
+  const push = useNavigate();
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    login(dispatch, { username, password });
-  };
+  const handleClick = async () => {
+    try {
+      await axios.post("http://localhost:5001/api/login", { username, password });
+      Router.push("/admin")
+    } catch (err) {
+      setError(true)
+    }
+  }
 
   
   return (
@@ -30,7 +46,7 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button onClick={handleClick} >LOGIN</Button>
-          {/* {error && <Error>Wrong credentials. Try again.</Error>} */}
+          {error && <Error>Wrong credentials. Try again.</Error>}
         </Form>
       </Wrapper>
     </Container>
@@ -93,15 +109,16 @@ const Button = styled.button`
   }
 `;
 
-const Link = styled.a`
-  margin: 5px 0px;
-  font-size: 12px;
-  text-decoration: underline;
-  cursor: pointer;
-`;
+// const Links = styled.a`
+//   margin: 5px 0px;
+//   font-size: 12px;
+//   text-decoration: underline;
+//   cursor: pointer;
+// `;
 
 const Error = styled.span`
 color: red;
+font-size: 13;
 `
 
 export default Login;
