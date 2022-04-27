@@ -12,7 +12,8 @@ The payment integration that will be used is stripe checkout.
 
 Below is a way to fire up the app on local machine.
 
-.ENV
+## .ENV
+
 MONGO_URL = mongodb+srv://naeabah:Hsa17tyu@cluster0.4kugj.mongodb.net/shop?retryWrites=true&w=majority
 
 
